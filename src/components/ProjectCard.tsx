@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, imageUrl, tech }: ProjectCardProps) =
       background={"bule.500"}
     //   bg={bg}
     //   boxShadow={}
-    bgColor={'blue.50'}
+    bgColor={'gray.50'}
       transition="transform 0.3s"
       _hover={{ transform: 'scale(1.03)' }}
     >
@@ -38,6 +38,15 @@ const ProjectCard = ({ title, description, imageUrl, tech }: ProjectCardProps) =
           <Text><strong>Technology Used:</strong> {tech} </Text>
           {description}
         </Text>
+
+  {/* <Stack gap={2}>
+              {description.map((point, i) => (
+                <Text key={i} fontSize="sm" color="gray.600">
+                  • {point}
+                </Text>
+              ))}
+            </Stack> */}
+
 
         <Stack direction="row" >
           <Button

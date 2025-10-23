@@ -1,8 +1,6 @@
 import { Box, Heading, SimpleGrid,Container, } from '@chakra-ui/react';
 
 
-
-
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {

@@ -7,20 +7,20 @@ import HomePage from "./components/HomePage"
 import Certificate from "./components/Certificate"
 import Education from "./components/Education"
 import ContactUs from "./components/ContactUs"
+import Experience from "./components/Experience"
 function App() {
   return (
     <>
     <WhatsApp/>
     <Header />
     <HomePage/>
+    <Experience/>
     <Skills/>
     <Projects/>
     <Education/>
     <Certificate/>
     <ContactUs/>
     <Footer/>
-
-
     </>
   )  
 }

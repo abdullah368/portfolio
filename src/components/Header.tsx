@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Skills from './Skills';
+import  { useState } from 'react'; 
 import {
   Box,
   Flex,
@@ -9,9 +8,8 @@ import {
   Button,
   Link
 } from '@chakra-ui/react';
-import { FiHome, FiMenu, FiX } from 'react-icons/fi';
+import {  FiMenu, FiX } from 'react-icons/fi';
 
-//const Links = ['Home', 'Projects', 'Skills', 'Contact Us'];
 
 const Links = [
   { label: 'Home', href: '#home' },
@@ -21,7 +19,7 @@ const Links = [
   {label: 'Certificates', href: '#certificates'},
   { label: 'Contact Us', href: '#contact' },
 ];
-
+ 
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
