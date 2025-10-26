@@ -13,6 +13,7 @@ import {  FiMenu, FiX } from 'react-icons/fi';
 
 const Links = [
   { label: 'Home', href: '#home' },
+  { label: 'Experience', href: '#Experience' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#Education' },

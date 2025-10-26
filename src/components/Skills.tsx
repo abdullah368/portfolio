@@ -11,7 +11,7 @@ import { FaCode, FaBrain} from 'react-icons/fa';
 
 const Skills = () => {
   return (
-    <Box px={6} py={10} bg="gray.50"  id="Skills">
+    <Box px={6} py={10} bg="gray.50"  id="skills">
       <Heading textAlign="center" mb={10} fontSize="3xl" color="teal.700">
         My Skills & Strengths
       </Heading>

@@ -33,7 +33,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <Box id="experience" px={6} py={10} bg="gray.50">
+    <Box id="Experience" px={6} py={10} bg="gray.50" >
       <Heading textAlign="center" mb={10} fontSize="3xl" color="teal.700">
         Experience
       </Heading>

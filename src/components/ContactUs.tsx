@@ -12,7 +12,7 @@ import {
 
 const ContactUs = () => {
   return (
-    <Box px={6} py={10} bg="gray.100">
+    <Box px={6} py={10} bg="gray.100" id='contact'>
       <Heading textAlign="center" mb={10} fontSize="3xl" color="teal.700">
         Contact Me
       </Heading>

@@ -31,7 +31,7 @@ const Education= () => {
   ];
 
   return (
-    <Box px={6} py={10} bg="gray.50">
+    <Box px={6} py={10} bg="gray.50" id='Education'>
       <Heading textAlign="center" mb={10} fontSize="3xl" color="teal.700">
         Education
       </Heading>

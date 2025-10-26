@@ -5,16 +5,15 @@
   "type": "module",
    "homepage": "https://abdullah368.github.io/portfolio",
 
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-  },
+ 
 
-
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+,
 
 
 

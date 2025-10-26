@@ -8,16 +8,16 @@ const Footer = () => (
           Follow Me
         </Heading>
         <HStack justify="center" gap={6}>
-          <Link href="https://github.com/abdullah368" >
+          <Link href="https://github.com/abdullah368" target="_blank" >
             <FaGithub size="28px" color="#333" />
           </Link>
-          <Link href="https://linkedin.com/in/abdullah368"  >
+          <Link href="https://linkedin.com/in/abdullah368" target="_blank" >
             <FaLinkedin size="28px" color="#0077B5" />
           </Link>
-          <Link href="https://twitter.com/abdullah368"  >
+          <Link href="https://twitter.com/abdullah368"  target="_blank" >
             <FaTwitter size="28px" color="#1DA1F2" />
           </Link>
-          <Link href="https://wa.me/9661700958"  >
+          <Link href="https://wa.me/+919661700958" target="_blank" >
             <FaWhatsapp size="28px" color="#25D366" />
           </Link>
         </HStack>

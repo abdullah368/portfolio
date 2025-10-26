@@ -6,9 +6,8 @@ import {
 const HomePage = () => {
   return (
     <>
-    <Box
-     bgImage="url('/img/bg.webp')"
-    //   bgColor={'black'}
+    <Box id='home'
+    bgImage="url('img/bg.webp')" 
       bgSize="cover"
     //   bgPosition="center"
       minH="80vh"
@@ -30,10 +29,9 @@ const HomePage = () => {
             Hi, I'm Abdullah 👋
           </Heading>
           <Text fontSize="lg" mb={0} mt={8}>
-            Full-stack developer passionate about building scalable, beautiful web apps.
-            To obtain a Software Developer position where I can utilize my skills in ASP.NET, C#, MVC, SQL Server, 
-            and JavaScript frameworks to contribute to the design, development, and modernization of enterprise web 
-            applications. Eager to leverage problem-solving and communication skills in a collaborative environment
+        Motivated full-stack developer with a passion for building scalable and user-friendly web applications. 
+        Seeking a Software Developer role to apply my skills in ASP.NET, C#, MVC, SQL Server, and JavaScript frameworks. 
+        I aim to contribute to modern enterprise solutions while growing through teamwork, problem-solving, and continuous learning. 
           </Text>
 
           <Stack direction={['column', 'row']} mb={6} mt={8}>
@@ -45,7 +43,7 @@ const HomePage = () => {
   </Link>
 
   {/* Resume Download Button */}
-  <Link href="/AbdullahRESUME.pdf" download _hover={{ textDecoration: 'none' }}>
+  <Link href="/portfolio/AbdullahRESUME.pdf" download _hover={{ textDecoration: 'none' }}>
     <Button colorScheme="teal"  size="lg">
       Download Resume
     </Button>
@@ -57,7 +55,7 @@ const HomePage = () => {
         {/* Right Section */}
         <Box flex="1" textAlign="center">
           <Image
-            src="/img/abd.png"
+            src="/portfolio/img/abd.png"
             alt="Abdullah"
             borderRadius="full"
             boxSize={['200px', '250px', '300px']}

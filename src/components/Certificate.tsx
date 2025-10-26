@@ -1,6 +1,4 @@
 
-
-
 import {
   Box,
   Heading,
@@ -17,19 +15,19 @@ const Certificate = () => {
     {
       title: 'Machine Learning – From Basic to Advanced',
       issuer: 'Udemy',
-      image: '/img/ml.png',
+      image: '/portfolio/img/ml.png',
       link: 'https://www.udemy.com/certificate/UC-c4ca9371-d753-4920-bfb7-1a828786089c/',
     },
     {
       title: 'Python for Beginners',
       issuer: 'Simplilearn',
-      image: '/img/python.png',
-      link: 'https://drive.google.com/file/d/1-CpywOhKvwuoSUTkLB1g_Qkbl5UnSCoK/view?usp=drive_link',
+      image: '/portfolio/img/python.png',
+      link: 'https://simpli.app.link/wTWbMDF4eyb',
     },
   {
       title: 'ReactJS  Course – Basics to Advanced ',
       issuer: 'Udemy',
-      image: '/img/rs.png',
+      image: '/portfolio/img/rs.png',
       link: 'https://www.udemy.com/certificate/UC-817f7975-452c-40ea-b755-ceeea99009ae/',
     },
   ];
@@ -42,7 +40,7 @@ const Certificate = () => {
   ];
 
   return (
-    <Box px={6} py={10} bg="gray.100">
+    <Box px={6} py={10} bg="gray.100" id='certificates'>
       <Heading textAlign="center" mb={10} fontSize="3xl" color="teal.700">
         Certificates & Achievements
       </Heading>
@@ -74,7 +72,7 @@ const Certificate = () => {
               <Text fontSize="sm" color="gray.600">
                 Issued by: {cert.issuer}
               </Text>
-              <Link href={cert.link}  color="teal.500" fontSize="sm">
+              <Link href={cert.link} target="_blank"  color="teal.500" fontSize="sm">
                 View Certificate →
               </Link>
             </Stack>

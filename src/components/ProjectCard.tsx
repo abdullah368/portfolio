@@ -1,4 +1,4 @@
-import { Box, Image, Heading, Text, Button, Stack,  } from '@chakra-ui/react';
+import { Box, Image, Heading, Text, Button, Stack, chakra, Link } from '@chakra-ui/react';
 
 interface ProjectCardProps {
   title: string;
@@ -10,8 +10,11 @@ interface ProjectCardProps {
  
 }
 
-const ProjectCard = ({ title, description, imageUrl, tech }: ProjectCardProps) => {
- 
+const ProjectCard = ({ title, description, imageUrl, tech, liveUrl ,githubUrl}: ProjectCardProps) => {
+ const descriptionLines = description
+  .split(/\r?\n/) // handles both \n and \r\n
+  .map(line => line.trim())
+  .filter(Boolean);
   return (
  
     <Box
@@ -35,38 +38,32 @@ const ProjectCard = ({ title, description, imageUrl, tech }: ProjectCardProps) =
       <Box p="6" >
         <Heading fontSize="xl" mb="2">{title}</Heading>
         <Text mb="4" >
-          <Text><strong>Technology Used:</strong> {tech} </Text>
-          {description}
+          <Text><strong>Tech Stack:</strong> {tech} </Text>
+        
+
+     {descriptionLines.map((line, idx) => (
+      <chakra.p key={idx} mb={2}>
+        {line}
+      </chakra.p>
+    ))}
+
         </Text>
 
-  {/* <Stack gap={2}>
-              {description.map((point, i) => (
-                <Text key={i} fontSize="sm" color="gray.600">
-                  • {point}
-                </Text>
-              ))}
-            </Stack> */}
 
+      <Stack direction="row">
+  <Link href={liveUrl} target="_blank">
+    <Button colorScheme="teal" variant="solid" size="sm">
+      Live Demo
+    </Button>
+  </Link>
 
-        <Stack direction="row" >
-          <Button
-            as="a"
-           
-            colorScheme="teal"
-            variant="solid"
-            size="sm"
-          >
-            Live Demo
-          </Button>
-          <Button
-            as="a"
-            colorScheme="tail"
-            variant="outline"
-            size="sm"
-          >
-            GitHub
-          </Button>
-        </Stack>
+  <Link href={githubUrl}  target="_blank">
+    <Button colorScheme="teal" variant="outline" size="sm">
+      GitHub
+    </Button>
+  </Link>
+</Stack>
+
       </Box>
     </Box>
   );
