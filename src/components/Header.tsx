@@ -1,4 +1,4 @@
-import  { useState } from 'react'; 
+import { useState } from 'react';
 import {
   Box,
   Flex,
@@ -8,7 +8,7 @@ import {
   Button,
   Link
 } from '@chakra-ui/react';
-import {  FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 
 const Links = [
@@ -17,16 +17,16 @@ const Links = [
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#Education' },
-  {label: 'Certificates', href: '#certificates'},
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Contact Us', href: '#contact' },
 ];
- 
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Box px={4} boxShadow="md" bg="gray.100">
+    <Box px={4} boxShadow="md" bg="gray.100" id='home'>
       <Flex h={16} alignItems="center" justifyContent="space-between">
         {/* Logo */}
         <Box fontWeight="bold" fontSize="xl" color="teal.500">
@@ -34,39 +34,41 @@ export default function Header() {
         </Box>
 
         {/* Desktop Nav */}
-<HStack display={{ base: 'none', md: 'flex' }}>
-  {Links.map((link) => (
-    <Link key={link.label} href={link.href} _hover={{ textDecoration: 'none' }}>
-      <Button variant="subtle" >{link.label}</Button>
-    </Link>
-  ))}
-</HStack>
+        <HStack display={{ base: 'none', md: 'flex' }}>
+          {Links.map((link) => (
+            <Link key={link.label} href={link.href} _hover={{ textDecoration: 'none' }}>
+              <Button variant="subtle" >{link.label}</Button>
+            </Link>
+          ))}
+        </HStack>
 
-   {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle */}
         <IconButton
           size="md"
           aria-label="Toggle Menu"
           display={{ md: 'none' }}
           onClick={() => setMenuOpen(!menuOpen)}
+
         >
-         {menuOpen ? <FiX/> : <FiMenu/>}
-          </IconButton>
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </IconButton>
       </Flex>
       {/* Mobile Nav */}
 
-{menuOpen && (
-  <Box pb={4} display={{ md: 'none' }}>
-    <Stack>
-      {Links.map((link) => (
-        <Link key={link.label} href={link.href} _hover={{ textDecoration: 'none' }}>
-          <Button variant="subtle" width="100%">
-            {link.label}
-          </Button>
-        </Link>
-      ))}
-    </Stack>
-  </Box>
-)}
+      {menuOpen && (
+        <Box pb={4} display={{ md: 'none' }}>
+          <Stack>
+            {Links.map((link) => (
+              <Link key={link.label} href={link.href} _hover={{ textDecoration: 'none' }} onClick={() => setMenuOpen(false)}>
+                <Button variant="subtle" width="100%">
+                  {link.label}
+
+                </Button>
+              </Link>
+            ))}
+          </Stack>
+        </Box>
+      )}
     </Box>
   );
 }

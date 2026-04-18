@@ -14,7 +14,7 @@ const Footer = () => (
           <Link href="https://linkedin.com/in/abdullah368" target="_blank" >
             <FaLinkedin size="28px" color="#0077B5" />
           </Link>
-          <Link href="https://twitter.com/abdullah368"  target="_blank" >
+          <Link href="https://twitter.com/Abdullah_368_"  target="_blank" >
             <FaTwitter size="28px" color="#1DA1F2" />
           </Link>
           <Link href="https://wa.me/+919661700958" target="_blank" >

@@ -11,8 +11,6 @@ const Projects = () => {
         Projects
       </Heading>
     
-
-
       <SimpleGrid columns={[1, 2, 3]}>
         <ProjectCard
           title="Al-Khair Educational & Charitable Trust "
@@ -25,6 +23,15 @@ const Projects = () => {
           githubUrl="#"
         />
 
+         <ProjectCard
+          title="Bharti Eye Foundation "
+          tech=' React, Chakra UI, Node.js, '
+          description="Developed a responsive, modern web interface for Bharti Eye Foundation, a NABH-accredited eye care hospital in New Delhi.
+                      The project focused on creating clear, accessible, and professional components using React.js"
+          imageUrl="../portfolio/img/bharti.png"
+          liveUrl="https://abdullah368.github.io/bharti-vite"
+          githubUrl="https://github.com/abdullah368/bharti-vite"
+        />
           <ProjectCard
           title="Cardiovascular Diseases Risk Prediction"
           tech='(Python | Pandas | NumPy | Matplotlib |Seaborn) '
@@ -32,9 +39,9 @@ const Projects = () => {
            • Developed a model to predict risk of cardiovascular diseases using historical health data. 
            • Performed data cleaning, visualization, and feature analysis to improve model accuracy "
             
-          imageUrl='/portfolio/img/port.png'
+          imageUrl='/portfolio/img/cvd.png'
           liveUrl="https://abdullah368.github.io/portfolio"
-          githubUrl="https://github.com/abdullah/portfolio"
+          githubUrl="https://github.com/abdullah/"
         />
           <ProjectCard
           title="E-Attendance Face Recognition Attendance System"
@@ -51,7 +58,6 @@ const Projects = () => {
           tech=' React, Chakra UI, Node.js, Express, MongoDB, XLSX '
           description=" • Developed a responsive admin dashboard for user signup, management, and data export 
                         • Implemented secure authentication, full CRUD operations, and real-time API integration 
-                        • Designed dynamic UI with Chakra UI, including searchable tables and form validation 
                         • Enabled Excel export of user data using XLSX for easy reporting"
           imageUrl="../portfolio/img/p1.png"
           liveUrl="#"
@@ -66,6 +72,7 @@ const Projects = () => {
           liveUrl="https://abdullah368.github.io/portfolio"
           githubUrl="https://github.com/abdullah368/portfolio"
         />
+
 
         
       </SimpleGrid>

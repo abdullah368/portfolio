@@ -9,9 +9,18 @@ import {
 
 const experiences = [
   {
+    role: 'Forntend Developer',
+    company: 'Learnkaro Education Technologies Private Limited',
+    duration: "Feb 2026 - Present ",
+    details: [
+      'Built admin dashboard with React.js and Shadcn-UI handling course management for 10,000+ users  ',
+      'Collaborated with backend team to design and implement 15+ API endpoints for course management.  ',
+    ],
+  },
+  {
     role: 'Software Development Intern',
     company: 'Marvell Digital Technologies Pvt. Ltd.',
-    duration: 'July 2025 – Present',
+    duration: 'July 2025 – Jan 2026',
     details: [
       'Working on software development projects under the guidance of senior developers.',
       'Collaborating with the team to design, develop, and test scalable web applications.',
