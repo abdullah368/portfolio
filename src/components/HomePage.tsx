@@ -43,7 +43,7 @@ const HomePage = () => {
               </Link>
 
               {/* Resume Download Button */}
-              <Link href="/portfolio/img/ABDULDOC.pdf" download _hover={{ textDecoration: 'none' }}>
+              <Link href="/portfolio/ABDULDOC.pdf" download _hover={{ textDecoration: 'none' }}>
                 <Button colorScheme="teal" size="lg">
                   Download Resume
                 </Button>
